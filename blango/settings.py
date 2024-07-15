@@ -176,7 +176,7 @@ class Dev(Configuration):
     AUTH_USER_MODEL = "blango_auth.User"
     CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
     CRISPY_TEMPLATE_PACK = "bootstrap5"
-
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
     INTERNAL_IPS = ["192.168.11.179"]
 class Prod(Dev):
   DEBUG = False
